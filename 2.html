@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Berita Terkini</title>
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
 @media(max-width: 400px){
@@ -142,6 +143,24 @@ footer {
     }
 
 /* end responsive */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+
+
 
 body {
     font-family: Arial, sans-serif;
@@ -158,7 +177,7 @@ header {
     color: #fff;
     padding: 10px 0;
     text-align: center;
-    position:sticky;
+ position: relative;
     top: 0;
     z-index: 1000;
     
@@ -288,12 +307,31 @@ main {
 
 footer {
     background: #333;
+    
+    background: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
+   
+}
+footer a:link{
+    color: #fff;
+    text-decoration: none;
+}
+footer a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+footer a:active{
+    color: #fff;
+    text-decoration: none;
 }
 
 .login-register {
@@ -338,14 +376,14 @@ footer {
                 <h1>Berita Terkini</h1>
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Kategori</a></li>
-                        <li><a href="#">Tentang Kami</a></li>
-                        <li><a href="#">Kontak</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#kategori">Kategori</a></li>
+                        <li><a href="#tentang">Tentang Kami</a></li>
+                        <li><a href="#tentang">Kontak</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="search-container">
+            <div class="search-container" id="home">
                 <input type="text" class="search-bar" placeholder="Cari berita...">
                 <button class="search-button">
                     <span class="search-icon">🔍</span>
@@ -359,7 +397,7 @@ footer {
         </div>
     </header>
 <!-- for mobile -->
- <aside class="category-sidebar-mobile"> 
+ <aside class="category-sidebar-mobile" id="kategori"> 
     <h3>Kategori</h3>
     <ul class="category-list-mobile">
         <li><a href="#Kesehatan">Kesehatan</a></li>
@@ -563,8 +601,34 @@ footer {
         </div>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Berita Terkini. All rights reserved.</p>
+    
+    <footer class="bg-body-tertiary text-center">
+        <section>
+            
+            <a href="https://www.instagram.com/ainggggmawung/">
+                <i class="fa-brands fa-instagram fa-2x white-text mr-md-5 mr-3"></i>
+            </a>
+            <a href="https://mail.google.com/mail/u/0/?ogbl#inbox">
+                <i class="fa-brands fa-google fa-2x white-text mr-md-5 mr-3 ps-2"></i>
+            </a>
+            <a href="https://github.com/Laloyyy">
+                <i class="fa-brands fa-github fa-2x white-text mr-md-5 mr-3 ps-2"></i>
+            </a>
+            
+        </section>
+
+       
+  
+
+        <div class="text-center p-2 ms-3 fs-6" id="tentang"> 
+            &copy; 2025 Berita Terkini. All rights reserved.
+
+        </div>
+    
+  
+  
     </footer>
+    
+
 </body>
 </html>
